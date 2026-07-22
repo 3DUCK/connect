@@ -203,10 +203,10 @@ export default function SheetPage() {
                 </div>
                 <div>
                   <span className="font-bold text-black block">
-                    {answers.arc === 'yes' ? '있음 (실물 보유)' : answers.arc === 'soon' ? '신청 중 (아직 없음)' : '없음 (여권만 보유)'}
+                    {answers.arc === 'yes' ? '있음 (실물 보유)' : '없음 (여권만 보유)'}
                   </span>
                   <span className="text-gray-500 text-sm font-normal block mt-1">
-                    {answers.arc === 'yes' ? ts("arc_yes") : answers.arc === 'soon' ? ts("arc_soon") : ts("arc_no")}
+                    {answers.arc === 'yes' ? ts("arc_yes") : ts("arc_no")}
                   </span>
                 </div>
               </li>
