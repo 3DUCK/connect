@@ -82,7 +82,7 @@ const i18nDict: Record<string, Record<string, string>> = {
   }
 };
 
-function parseTotalCost($, durationMonths: number, t: Record<string, string>): { price: string, specs: any } | null {
+function parseTotalCost($: any, durationMonths: number, t: Record<string, string>): { price: string, specs: any } | null {
   let bestPlan = "";
   let bestPlanSpecs = null;
   let lowestTotalCost = Infinity;
