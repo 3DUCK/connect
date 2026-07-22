@@ -12,10 +12,11 @@ export function calculateRecommendation(answers: Answers): RecommendationResult[
   let primary: PlanSlug = 'mvno';
   
   // New logic matching the diagnostic tree
-  if (stay === 'short') {
+  if (stay === '1month' || stay === '2months' || stay === '3months') {
     // Short term stays (< 6 months) shouldn't do postpaid
     primary = 'prepaid_online';
-  } else if (arc === 'no' || arc === 'soon') {
+  } else if (arc === 'no') {
+    // If stay is >= 6 months but no ARC yet
     primary = 'prepaid_online';
   } else if (arc === 'yes' && bank === 'no') {
     // Has ARC but no bank -> Needs bank first, but can do prepaid in the meantime

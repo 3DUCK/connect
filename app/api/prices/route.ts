@@ -87,7 +87,7 @@ function parseTotalCost($: any, durationMonths: number, t: Record<string, string
   let bestPlanSpecs = null;
   let lowestTotalCost = Infinity;
 
-  $('.tit').each((i, el) => {
+  $('.tit').each((i: number, el: any) => {
     if (i > 15) return false;
     const parentText = $(el).parent().text().replace(/\s+/g, ' ');
     const liText = $(el).closest('li').text().replace(/\s+/g, ' ');
