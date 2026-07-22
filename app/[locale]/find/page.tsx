@@ -22,20 +22,10 @@ export default function QuizPage() {
 
   const QUESTIONS: Question[] = [
     {
-      id: "stay",
-      title: t("q_stay_title"),
-      options: [
-        { label: t("q_stay_opt1"), value: "short", desc: t("q_stay_desc1") },
-        { label: t("q_stay_opt2"), value: "mid", desc: t("q_stay_desc2") },
-        { label: t("q_stay_opt3"), value: "long", desc: t("q_stay_desc3") },
-      ]
-    },
-    {
       id: "arc",
       title: t("q_arc_title"),
       options: [
         { label: t("q_arc_opt1"), value: "yes" },
-        { label: t("q_arc_opt2"), value: "soon", desc: t("q_arc_desc2") },
         { label: t("q_arc_opt3"), value: "no" },
       ]
     },
@@ -56,23 +46,87 @@ export default function QuizPage() {
       ]
     },
     {
-      id: "data",
-      title: t("q_data_title"),
+      id: "stay",
+      title: t("q_stay_title"),
       options: [
-        { label: t("q_data_opt1"), value: "light" },
-        { label: t("q_data_opt2"), value: "med" },
-        { label: t("q_data_opt3"), value: "heavy" },
-        { label: t("q_data_opt4"), value: "unl" },
+        { label: t("q_stay_opt_1month"), value: "1month", desc: t("q_stay_desc_1month") },
+        { label: t("q_stay_opt_2months"), value: "2months", desc: t("q_stay_desc_2months") },
+        { label: t("q_stay_opt_3months"), value: "3months", desc: t("q_stay_desc_3months") },
+        { label: t("q_stay_opt_6months"), value: "6months", desc: t("q_stay_desc_6months") },
+        { label: t("q_stay_opt_1year"), value: "1year", desc: t("q_stay_desc_1year") },
+        { label: t("q_stay_opt_resident"), value: "resident", desc: t("q_stay_desc_resident") },
       ]
     },
     {
-      id: "budget",
-      title: t("q_budget_title"),
+      id: "data",
+      title: t("q_data_title"),
       options: [
-        { label: t("q_budget_opt1"), value: "low" },
-        { label: t("q_budget_opt2"), value: "mid" },
-        { label: t("q_budget_opt3"), value: "high" },
-        { label: t("q_budget_opt4"), value: "prem" },
+        { label: t("q_data_opt1"), value: "light", desc: t("q_data_desc1") },
+        { label: t("q_data_opt2"), value: "medium", desc: t("q_data_desc2") },
+        { label: t("q_data_opt3"), value: "unlimited", desc: t("q_data_desc3") },
+      ]
+    },
+    {
+      id: "calls",
+      title: t("q_calls_title"),
+      options: [
+        { label: t("q_calls_opt1"), value: "minimal", desc: t("q_calls_desc1") },
+        { label: t("q_calls_opt2"), value: "unlimited", desc: t("q_calls_desc2") },
+      ]
+    },
+    {
+      id: "network",
+      title: t("q_network_title"),
+      options: [
+        { label: t("q_network_opt1"), value: "4g", desc: t("q_network_desc1") },
+        { label: t("q_network_opt2"), value: "5g", desc: t("q_network_desc2") },
+      ]
+    },
+    {
+      id: "tethering",
+      title: t("q_tethering_title"),
+      options: [
+        { label: t("q_tethering_opt1"), value: "yes", desc: t("q_tethering_desc1") },
+        { label: t("q_tethering_opt2"), value: "no", desc: t("q_tethering_desc2") },
+      ]
+    },
+    {
+      id: "intlCalls",
+      title: t("q_intl_title"),
+      options: [
+        { label: t("q_intl_opt1"), value: "yes", desc: t("q_intl_desc1") },
+        { label: t("q_intl_opt2"), value: "no", desc: t("q_intl_desc2") },
+      ]
+    },
+    {
+      id: "simType",
+      title: t("q_sim_title"),
+      options: [
+        { label: t("q_sim_opt1"), value: "physical", desc: t("q_sim_desc1") },
+        { label: t("q_sim_opt2"), value: "esim", desc: t("q_sim_desc2") },
+        { label: t("q_sim_opt3"), value: "any", desc: t("q_sim_desc3") },
+      ]
+    },
+    {
+      id: "carrier",
+      title: t("q_carrier_title"),
+      options: [
+        { label: t("q_carrier_opt1"), value: "skt", desc: t("q_carrier_desc1") },
+        { label: t("q_carrier_opt2"), value: "kt", desc: t("q_carrier_desc2") },
+        { label: t("q_carrier_opt3"), value: "lgu", desc: t("q_carrier_desc3") },
+        { label: t("q_carrier_opt_mvno"), value: "mvno", desc: t("q_carrier_desc_mvno") },
+        { label: t("q_carrier_opt_prepaid"), value: "prepaid", desc: t("q_carrier_desc_prepaid") },
+        { label: t("q_carrier_opt_airport"), value: "airport", desc: t("q_carrier_desc_airport") },
+        { label: t("q_carrier_opt4"), value: "any", desc: t("q_carrier_desc4") },
+      ]
+    },
+    {
+      id: "payment",
+      title: t("q_payment_title"),
+      options: [
+        { label: t("q_payment_opt1"), value: "card", desc: t("q_payment_desc1") },
+        { label: t("q_payment_opt2"), value: "bank", desc: t("q_payment_desc2") },
+        { label: t("q_payment_opt3"), value: "cash", desc: t("q_payment_desc3") },
       ]
     }
   ];

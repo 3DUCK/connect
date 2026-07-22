@@ -2,12 +2,25 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 export type Answers = {
-  stay?: 'short' | 'mid' | 'long';
-  arc?: 'yes' | 'soon' | 'no';
-  budget?: 'low' | 'mid' | 'high' | 'prem';
-  data?: 'light' | 'med' | 'heavy' | 'unl';
-  phone?: 'byo' | 'need';
+  arc?: 'yes' | 'no';
   bank?: 'yes' | 'no';
+  phone?: 'byo' | 'need';
+  stay?: '1month' | '2months' | '3months' | '6months' | '1year' | 'resident';
+  data?: 'light' | 'medium' | 'unlimited';
+  calls?: 'minimal' | 'unlimited';
+  network?: '4g' | '5g';
+  tethering?: 'yes' | 'no';
+  intlCalls?: 'yes' | 'no';
+  simType?: 'physical' | 'esim' | 'any';
+  carrier?: 'skt' | 'kt' | 'lgu' | 'mvno' | 'prepaid' | 'airport' | 'any';
+  payment?: 'card' | 'bank' | 'cash';
+  fullName?: string;
+  nationality?: string;
+  contactNum?: string;
+  phoneModel?: string;
+  address?: string;
+  imei?: string;
+  dob?: string;
 };
 
 interface QuizState {
