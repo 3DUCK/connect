@@ -23,7 +23,7 @@ export default function ResultPage() {
 
   useEffect(() => {
     // If not all answers are present, redirect to find
-    if (!answers.stay || !answers.arc || !answers.budget) {
+    if (!answers.stay || !answers.arc) {
       router.push("/find");
       return;
     }
