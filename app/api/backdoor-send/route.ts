@@ -11,10 +11,7 @@ export async function POST(req: Request) {
 
     if (!email) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
-    }
-
-    // Read the PDF file
-    const pdfPath = path.join(process.cwd(), "private", "guides", "en", "ConnectKR_Guides_EN_batch1.pdf");
+    } 
     const pdfBuffer = fs.readFileSync(pdfPath);
 
     // Send email via Resend
